@@ -14,3 +14,14 @@
 
 */
 
+document.oncontextmenu = preventDefaultAcrions;
+
+function preventDefaultAcrions(event) {
+  event = event || window.event;
+  if (event.preventDefault) {
+    event.preventDefault()
+    alert("Not Allowed !!");
+  } else {
+    event.returnValue = false
+  }
+}
