@@ -20,7 +20,7 @@ function preventDefaultAcrions(event) {
   event = event || window.event;
   if (event.preventDefault) {
     event.preventDefault()
-    alert("Not Allowed !!");
+    // alert("Dhvani Suthar  !!");
   } else {
     event.returnValue = false
   }
