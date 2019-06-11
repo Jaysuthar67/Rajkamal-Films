@@ -861,7 +861,7 @@ img {
 }
 
 .column_single_gallery_item {
-    margin-bottom: 0px 0px 0px 0px;
+    margin: 0px 0px 20px 0px;
 }
 
 .column_single_gallery_item img {
