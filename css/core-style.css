@@ -837,6 +837,18 @@ img {
     padding-right: 45px;
 }
 
+.ytgallery_area {
+    height: calc(100% - 280px);
+    width: calc(100% - 245px);
+    overflow-y: scroll;
+    position: fixed;
+    z-index: 1;
+    top: 200px;
+    left: 185px;
+    right: 60px;
+    padding-right: 45px;
+}
+
 
 .portfolio-menu button {
     background-color: transparent;
