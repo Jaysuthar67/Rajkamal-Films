@@ -108,7 +108,7 @@
                 tNext: 'Next (Right arrow key)', // title for right button
                 tCounter: '<span class="mfp-counter">%curr% of %total%</span>'
             }
-        });
+        }); 
     }
 
     // Gallery Menu Style Active Code
