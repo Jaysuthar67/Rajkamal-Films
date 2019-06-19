@@ -87,17 +87,18 @@
     // Video Active Code
     if ($.fn.magnificPopup) {
         $(".videobtn").magnificPopup({
-          disableOn: 0,
-          type: "iframe",
-          mainClass: "mfp-fade",
-          removalDelay: 160,
-          preloader: true,
-          fixedContentPos: false,
+            disableOn: 0,
+            type: "iframe",
+            mainClass: "mfp-fade",
+            removalDelay: 160,
+            preloader: true,
+            fixedContentPos: false,
         });
-        $('.gallery_img').magnificPopup({
+        $('.portfolio-column').magnificPopup({
             type: 'image',
             removalDelay: 300,
             mainClass: 'mfp-fade',
+            delegate: 'a',
             gallery: {
                 enabled: true,
                 preload: [0, 2],
@@ -124,7 +125,10 @@
                 var filterValue = $(this).attr('data-filter');
                 $grid.isotope({
                     filter: filterValue
-                    
+
+                });
+                $grid.on('arrangeComplete', function (event, filteredItems) {
+                    console.log(filteredItems.length);
                 });
             });
             // init Isotope
@@ -134,6 +138,10 @@
                 masonry: {
                     columnWidth: '.column_single_gallery_item'
                 }
+            });
+
+            $grid.on('arrangeComplete', function (event, filteredItems) {
+                console.log(filteredItems);
             });
         });
     }
