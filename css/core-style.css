@@ -557,7 +557,7 @@ img {
     height: 72%;
     background-color: transparent;
     position: fixed;
-    bottom: 100px;
+    bottom: 50px;
     left: 0;
     z-index: 100;
     overflow: hidden;
@@ -646,6 +646,7 @@ img {
     width: 100%;
     height: auto;
     margin: 0;
+    /* transform: scale(0.5); */
     z-index: 9999;
 }
 
