@@ -94,7 +94,7 @@
             preloader: true,
             fixedContentPos: false,
         });
-        $('.portfolio-column').magnificPopup({
+        $('.column_single_gallery_item').magnificPopup({
             type: 'image',
             removalDelay: 300,
             mainClass: 'mfp-fade',
