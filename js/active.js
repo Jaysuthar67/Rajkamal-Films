@@ -94,11 +94,11 @@
             preloader: true,
             fixedContentPos: false,
         });
-        $('.column_single_gallery_item').magnificPopup({
+        $('.portfolio-column').magnificPopup({
             type: 'image',
             removalDelay: 300,
             mainClass: 'mfp-fade',
-            delegate: 'a',
+            delegate: 'a.mag',
             gallery: {
                 enabled: true,
                 preload: [0, 2],
@@ -108,7 +108,7 @@
                 tNext: 'Next (Right arrow key)', // title for right button
                 tCounter: '<span class="mfp-counter">%curr% of %total%</span>'
             }
-        }); 
+        });
     }
 
     // Gallery Menu Style Active Code
@@ -127,9 +127,6 @@
                     filter: filterValue
 
                 });
-                $grid.on('arrangeComplete', function (event, filteredItems) {
-                    console.log(filteredItems.length);
-                });
             });
             // init Isotope
             var $grid = $('.portfolio-column').isotope({
@@ -142,6 +139,8 @@
 
             $grid.on('arrangeComplete', function (event, filteredItems) {
                 console.log(filteredItems);
+                $(".column_single_gallery_item:hidden a").removeClass("mag");
+                $(".column_single_gallery_item:visible a").addClass("mag");
             });
         });
     }
