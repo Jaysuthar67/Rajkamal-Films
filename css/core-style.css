@@ -646,7 +646,6 @@ img {
     width: 100%;
     height: auto;
     margin: 0;
-    /* transform: scale(0.5); */
     z-index: 9999;
 }
 
