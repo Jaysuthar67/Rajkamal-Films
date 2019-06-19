@@ -97,7 +97,7 @@
         $('.gallery_img').magnificPopup({
             type: 'image',
             removalDelay: 300,
-            mainClass: 'mfp-fade',zz
+            mainClass: 'mfp-fade',
             gallery: {
                 enabled: true,
                 preload: [0, 2],
