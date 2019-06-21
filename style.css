@@ -31,3 +31,9 @@
   border-radius: 8px;
   /* color: rgb(134, 21, 21); */
 }
+
+@media print {
+  html, body {
+     display: none;  /* hide whole page */
+  }
+}
