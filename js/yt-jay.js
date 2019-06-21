@@ -14,7 +14,7 @@
 
 */
 
-// document.oncontextmenu = preventDefaultAcrions;
+document.oncontextmenu = preventDefaultAcrions;
 
 function preventDefaultAcrions(event) {
   event = event || window.event;
