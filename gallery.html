@@ -155,27 +155,13 @@
         <!-- Single Item -->
 
 
-
         <script>
-          for (let i = 1; i < 5; i++) {
-            document.write(
-              `<div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item weddings prewedding">`);
-            document.write(` <a class="gallery_img mag" href="img/bg-img/p${i}.jpg">`);
-            document.write(
-              ` <img src="img/bg-img/p${i}.jpg" alt="" /> <div class="hover_overlay"> <!-- <i class="fa fa-eye"></i> --></div>`
-            );
+          for (let i = 1; i < 21; i++) {
+            document.write(`<div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item portfolio">`);
+            document.write(` <a class="gallery_img mag" href="img/bg-img/portfolio/small_p${i}.webp">`);
+            document.write(`<img src="img/bg-img/portfolio/small_p${i}.webp"> <div class="hover_overlay"></div>`);
             document.write(` </a> </div>`);
-          }
-
-          for (let i = 5; i < 12; i++) {
-            document.write(
-              `<div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item portfolio">`);
-            document.write(` <a class="gallery_img mag" href="img/bg-img/p${i}.jpg">`);
-            document.write(
-              ` <img src="img/bg-img/p${i}.jpg" alt="" /> <div class="hover_overlay"> <!-- <i class="fa fa-eye"></i> --></div>`
-            );
-            document.write(` </a> </div>`);
-          }
+            }
         </script>
 
       </div>
