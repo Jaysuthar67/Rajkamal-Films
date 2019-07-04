@@ -40,7 +40,9 @@
     margin: 0 auto 30px;
 }
 
-
+.about-me-thumb{
+  padding-top: 20px;
+}
 
 @media print {
   html, body {
