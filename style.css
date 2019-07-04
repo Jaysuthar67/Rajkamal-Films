@@ -39,7 +39,9 @@
     background-color: #212529;
     margin: 0 auto 30px;
 }
-
+.wame{
+  transform: scale(2);
+}
 @media print {
   html, body {
      display: none;  /* hide whole page */
