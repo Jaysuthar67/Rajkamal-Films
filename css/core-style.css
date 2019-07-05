@@ -816,13 +816,22 @@ img {
     -webkit-transition-duration: 500ms;
     transition-duration: 900ms;
     border-radius: 10px;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* transform: scale(0.9); */
 }
 
 .single-instagram-feeds:hover a {
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+
+}
+
+.single-instagram-feeds i {
+    transition: all 900ms;
+}
+
+
+.single-instagram-feeds:hover i {
     transform: scale(2);
 }
 
