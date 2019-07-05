@@ -98,7 +98,7 @@
             type: 'image',
             removalDelay: 300,
             mainClass: 'mfp-fade',
-            delegate: 'a.mag',
+            delegate: 'button.mag',
             gallery: {
                 enabled: true,
                 preload: [0, 2],
